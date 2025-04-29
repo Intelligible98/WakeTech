@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="banner.png" alt="Build Your Meal Plan" width="100%" />
+
+    <form id="mealPlan">
+        <!--User info-->
+        <p class="user-info">
+            Please enter your name, valid email, and goal for your meal plan.
+        </p>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="goal">Goal for your week:</label><br>
+        <textarea id="goal" name="goal" rows="4" cols="50" required></textarea><br>
+        
+        <hr class="divider">
+        
+        <!--Meals-->
+        <p class="meal-description">
+            You may include up to 5 meals, and leave any field blank for meals you do not wish to include in your plan.
+        </p>
+
+        <label for="breakfast">Breakfast:</label><br>
+        <input type="text" id="breakfast" name="breakfast" ><br>
+
+        <label for="snack1">Morning Snack:</label><br>
+        <input type="text" id="snack1" name="snack1" ><br>
+
+        <label for="lunch">Lunch:</label><br>
+        <input type="text" id="lunch" name="lunch" ><br>
+        
+        <label for="snack2">Afternoon Snack:</label><br>
+        <input type="text" id="snack2" name="snack2" ><br>
+
+        <label for="dinner">Dinner:</label><br>
+        <input type="text" id="dinner" name="dinner" ><br>
+
+        <!--Form submission-->
+        <button type="submit">Generate Meal Plan</button>
+
+        <!--Clear the form-->
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <script src="projectJS.js" defer></script>
+
+</body>
+</html>
